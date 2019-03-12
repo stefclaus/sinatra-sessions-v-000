@@ -19,7 +19,7 @@ class App < Sinatra::Base
   end
 
   get '/set' do
-    session[foo] = 'hello'
+    session['foo'] = 'hello'
      session["name"] = "Victoria"
     if session[:foo] == 'hello'
       redirect '/fetch'
